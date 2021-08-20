@@ -1,4 +1,4 @@
-n = int (input("人数の入力："))
+n = int(input("人数の入力："))
 data = {}
 new_students = []
 stu_points = []
@@ -6,8 +6,13 @@ for i in range(n):
     name = input(f"{i+1}. ")
     new_students.append(name)
 
+s = ""
 print("Start counting!")
-s = input()
+while True:
+    s += input()
+    ans = input("Finish? y or n :: ")
+    if ans == "y":
+        break
 
 for i in range(n):
     count = 0
